@@ -1,0 +1,72 @@
+body{
+    background: url(wall.jpg) no-repeat;
+    background-size: 100%;
+    width: auto;
+    height: 100vh;
+}
+#container{  
+    border-radius: 50%;
+    position: relative;
+    margin: auto;
+    margin-top: 4rem;
+    height: 35vw;
+    width: 35vw; 
+    background: url(watch.webp) no-repeat;
+    background-size: cover;
+}
+
+#hour, #minute, #second, #dot{
+    position: absolute;
+    background: black;
+    border-radius: 10px; 
+    transform-origin: bottom;
+}
+
+#dot{
+    border-radius: 30px; 
+    background: rgb(39, 37, 37);
+    width: 5%;
+    height: 5%;
+    top: 47%;
+    left: 47%; 
+}
+#hour{
+    background: rgb(230, 134, 134);
+    width: 1.8%;
+    height: 25%;
+    top: 25%;
+    left: 48.85%;
+}
+#minute{
+    width: 1.6%;
+    height: 29%;
+    top: 20.5%;
+    left: 48.9%;
+    opacity: 0.4;  
+}
+#second{
+    width: 0.6%;
+    height: 31%;
+    top: 18.5%;
+    left: 49.25%;
+    opacity: 0.8; 
+    
+}
+
+@media screen and (max-width:740px) {
+    body{
+        background: url(wall.jpg) no-repeat;
+        background-size: cover;
+        width: auto;
+        height: 100vh;
+    }
+    #container{  
+        margin: auto;
+        margin-top: 6rem;
+        height: 60vw;
+        width: 60vw; 
+        background: url(watch.webp) no-repeat;
+        background-size: 100%;
+    }
+    
+}
